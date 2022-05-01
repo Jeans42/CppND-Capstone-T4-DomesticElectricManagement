@@ -1,6 +1,11 @@
 #include <iostream>
+#include "IO/InputSimulation.h"
+
 
 int main() {
-    std::cout << "Hello World!" << "\n";
-    return 0;
+    InputSimulation* input = new InputSimulation();
+    while(true) {
+        input->readInputs();
+
+    }
 }
