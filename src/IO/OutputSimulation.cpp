@@ -2,13 +2,13 @@
 #include <iostream>
 #include "OutputSimulation.h"
 
-void OutputSimulation::setRefrigeratorExternalPowerNet(State st) {
-    std::cout << "Switched 230V Net for Refrigerator to ";
+void OutputSimulation::setFridgeExternalPowerNet(State st) {
+    std::cout << "Switched 230V Net for Fridge to ";
     printState(st);
 }
 
-void OutputSimulation::setRefrigeratorInternalPowerNet(State st) {
-    std::cout << "Switched 12V Net for Refrigerator to ";
+void OutputSimulation::setFridgeInternalPowerNet(State st) {
+    std::cout << "Switched 12V Net for Fridge to ";
     printState(st);
 }
 

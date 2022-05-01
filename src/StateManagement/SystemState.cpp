@@ -2,31 +2,35 @@
 #include "SystemState.h"
 #include <iostream>
 
+State SystemState::externalPowerNet = Off;
+State SystemState::FridgeExternalPowerNet = Off;
+State SystemState::FridgeInternalPowerNet = Off;
+
 void SystemState::setExternalPowerNet(State status){
     externalPowerNet = status;
-    std::cout << "External PowerNet set";
+    std::cout << "External PowerNet set" << "\n"; 
 }
 
 State SystemState::getExternalPowerNet() {
     return externalPowerNet;
 }
 
-void SystemState::setRefrigeratorExternalPowerNet(State status){
-    refrigeratorExternalPowerNet = status;
+void SystemState::setFridgeExternalPowerNet(State status){
+    FridgeExternalPowerNet = status;
 
     // TODO also call the according output function
 }
 
-State SystemState::getRefrigeratorExternalPowerNet() {
-    return refrigeratorExternalPowerNet;
+State SystemState::getFridgeExternalPowerNet() {
+    return FridgeExternalPowerNet;
 }
 
-void SystemState::setRefrigeratorInternalPowerNet(State status){
-    refrigeratorInternalPowerNet = status;
+void SystemState::setFridgeInternalPowerNet(State status){
+    FridgeInternalPowerNet = status;
     // TODO also call the according output function
 }
 
-State SystemState::getRefrigeratorInternalPowerNet() {
+State SystemState::getFridgeInternalPowerNet() {
     // TODO: maybe update here from the input signals?
-    return refrigeratorInternalPowerNet;
+    return FridgeInternalPowerNet;
 }

@@ -9,8 +9,8 @@
 class OutputSimulation : public IOutput 
 {
     public:
-        void setRefrigeratorExternalPowerNet(State st);
-        void setRefrigeratorInternalPowerNet(State st);
+        void setFridgeExternalPowerNet(State st);
+        void setFridgeInternalPowerNet(State st);
 
     private:
         void printState(State st);

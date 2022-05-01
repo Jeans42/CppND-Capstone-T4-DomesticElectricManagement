@@ -20,18 +20,17 @@ class SystemState
         static void setExternalPowerNet(State status);
         static State getExternalPowerNet();
 
-        static void setRefrigeratorExternalPowerNet(State status);
-        static State getRefrigeratorExternalPowerNet();
+        static void setFridgeExternalPowerNet(State status);
+        static State getFridgeExternalPowerNet();
 
-        static void setRefrigeratorInternalPowerNet(State status);
-        static State getRefrigeratorInternalPowerNet();
+        static void setFridgeInternalPowerNet(State status);
+        static State getFridgeInternalPowerNet();
 
     private:
-        static SystemState* instance;
 
         static State externalPowerNet;
-        static State refrigeratorExternalPowerNet;
-        static State refrigeratorInternalPowerNet;
+        static State FridgeExternalPowerNet;
+        static State FridgeInternalPowerNet;
 };
 
 

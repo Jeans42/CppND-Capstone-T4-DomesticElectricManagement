@@ -11,11 +11,11 @@ class IOutput
     public:
         ~IOutput() = default;
 
-        // set the relais for 230V Refrigerator
-        virtual void setRefrigeratorExternalPowerNet(State targetState) = 0;
+        // set the relais for 230V Fridge
+        virtual void setFridgeExternalPowerNet(State targetState) = 0;
 
-        // set the relais for 12V Refrigerator
-        virtual void setRefrigeratorInternalPowerNet(State targetState) = 0;
+        // set the relais for 12V Fridge
+        virtual void setFridgeInternalPowerNet(State targetState) = 0;
         
 };
 
